@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Dev_1o_Ano"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-02-21 10:12:57 "/>
+        <attribute name="created" value="RGV2XzFvX0FubztDRTgwODE0ODk5MDA7MjAyNS0wMi0yMTsiMDk6MjU6MDQgIjsyNzc1"/>
+        <attribute name="edited" value="RGV2XzFvX0FubztDRTgwODE0ODk5MDA7MjAyNS0wMi0yMTsiMTA6MTI6NTcgIjsxOzI4Nzk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Sistema de informa&#231;&#227;o SESI"/>
+            <output expression="&quot;Portal do Aluno&quot;" newline="True"/>
+            <comment text="Declara&#231;&#227;o de Variaveis"/>
+            <declare name="Nome" type="String" array="False" size=""/>
+            <declare name="Nota" type="Integer" array="False" size=""/>
+            <comment text="Entradas"/>
+            <output expression="&quot;Informe o Nome do Aluno&quot;" newline="True"/>
+            <input variable="Nome"/>
+            <output expression="&quot;Informe a Nota&quot;" newline="True"/>
+            <input variable="Nota"/>
+            <comment text="Processamento"/>
+            <if expression="( (Nota) &gt;=50)">
+                <then>
+                    <comment text="Sa&#237;da"/>
+                    <output expression="Nome &amp; &quot;Estudando Est&#225; aprovado&quot;" newline="True"/>
+                </then>
+                <else>
+                    <comment text="Sa&#237;da"/>
+                    <output expression="Nome &amp; &quot;Estudante N&#227;o est&#225; aprovado&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
